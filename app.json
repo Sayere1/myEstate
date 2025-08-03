@@ -9,7 +9,11 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yerecodebug.estateApp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -30,10 +34,9 @@
           "image": "./assets/images/splash-icon.png",
           "resizeMode": "cover",
           "backgroundColor": "#ffffff",
-          "enableFullScreenImage_legacy" : true
+          "enableFullScreenImage_legacy": true
         }
       ],
-
       [
         "expo-font",
         {
@@ -47,10 +50,18 @@
           ]
         }
       ]
-
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "015e80f0-6a09-4e19-a45e-0ad11070387a"
+      }
+    },
+    "owner": "yerecodebug"
   }
 }
